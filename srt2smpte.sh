@@ -2,7 +2,7 @@
 
 #Assumption: Language is en
 #Assumption: 24 frames per second for "EditRate". I don't really know what this field is though
-#Assumes that you want an Arial font. I think that's reasonable
+#Assumes that you want an Arial font (same as the one that's in the repository). I think that's reasonable
 
 if [ -z "$1" ] || [ -z "$2" ] || [ -z "$3" ]
 then
