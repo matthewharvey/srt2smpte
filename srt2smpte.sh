@@ -33,7 +33,7 @@ echo '<SubtitleList>'
 #echo -e '\t<Font ID="Arial" Color="FFFFFFFF" Weight="normal" Size="40">'
 #Write a single empty subtitle out at 00:00:00 for SMPTE needs
 echo -e '\t\t<Subtitle SpotNumber="0" TimeIn="00:00:00:00" TimeOut="00:00:00:00">'
-echo -e '\t\t\t<Text Valign="top" Vposition="10.00"></Text>'
+echo -e '\t\t\t<Text Valign="bottom" Vposition="10.00"></Text>'
 echo -e '\t\t</Subtitle>'
 #Start processing incoming subtitles
 while read SPOT_NUMBER
@@ -51,7 +51,7 @@ do
 
     #Now print out the information
     echo -e '\t\t<Subtitle SpotNumber="'$SPOT_NUMBER'" TimeIn="'$IN_TIME_CONVERTED'" TimeOut="'$OUT_TIME_CONVERTED'">'
-    echo -e '\t\t\t<Text Valign="top" Vposition="10.00">'$SUBTITLES'</Text>'
+    echo -e '\t\t\t<Text Valign="bottom" Vposition="10.00">'$SUBTITLES'</Text>'
     echo -e '\t\t</Subtitle>'
     SUBTITLES=
 done
